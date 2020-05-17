@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+        
+<head>
+        <title>Favorites|COOLinar.com</title>
+        <link rel="shortcut icon" href="../assets/images/icon-2.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <link rel = "stylesheet"
+        type = "text/css"
+        href = "../assets/css/style.css" />
+</head>
+
+<body style="background-color: rgba(243,243,243);">
+        <!--    HEADER  -->
+        <header>
+                <div class="header">
+                                <div id="menu"> <button id="menu-btn" tyle="cursor:pointer;outline: none;"></button>
+                                        <ul id="menu_list">
+                                                <li class="menu-item" id="iprofile"><a href="#iprofile" class="menu-btn">Профиль</a>
+                                                        <div class="smenu">
+                                                                <a href="#" id="authorization">Авторизация</a>
+                                                        </div>
+                                                </li>
+                                                <li class="menu-item" id="icuisine"><a href="#icuisine" class="menu-btn">Кухня</a>
+                                                        <div class="smenu">
+                                                                <a href="#">Украинская</a>
+                                                                <a href="#">Арабская</a>
+                                                                <a href="#">Французская</a>
+                                                                <a href="#">Мексиканская</a>
+                                                        </div>
+                                                </li>
+                                                <li class="menu-item" id="ifavorites"><a href="favorites.html" class="menu-btn">Избранные</a>
+                                                </li>
+                                        </ul>                 
+                                </div>
+                        <div id="title"> <a href="../index.html" style="text-decoration: none;">
+                                <img class='title-img' src="../assets/images/COOLinarText.jpg" alt=""> </a></div>
+                                <div class="search">
+                                        <button id="search-btn"></button> 
+                                        <input type="search" id="name" name="name" required minlength="4" maxlength="30" size="10" placeholder="Что вы хотите приготовить?" style="width:90%; height:90%; color: black; border:0px; border-radius: 5%;" name="search">
+                                </div>
+                </div>
+        </header>
+
+        <div class="overlay"></div>
+        <form action="index.html" class="login-form"> 
+                <h1>Авторизация</h1> 
+
+                <div class="txtb">
+                        <input type="text">
+                        <span data-placeholder="Логин"></span>
+                </div>
+                <div class="txtb">
+                                <input type="password">
+                                <span data-placeholder="Пароль"></span>
+                </div>
+                <input type="submit" class="logbtn" value="Войти">
+                <div class="login-bottom-text">
+                Ещё не зарегестрированы? <a href="#">Регистрация</a>   
+                </div>
+                <div class="close-btn">
+                        <img src="../assets/images/close-icon.png" alt="">
+                        закрыть
+                </div>                
+        </form>
+        <!--    BODY  -->
+
+        <!-- Main rp block -->
+        <div class="main-block" style="height: 85vh;">
+                <!-- more new recipe-links -->
+                <h1 style="color: rgb(54,54,54);text-align: center; margin-top: 3%;">Ваши Избранные Рецепты</h1>
+                <div class="break-line"></div>
+                <div class="recipe-links-line">
+                                <div class="recipe-link" id="rp1"> <a href="pork-chops.html">
+                                        <div class="marker">полезно</div>
+                                        <div class="rcp-picture"></div> 
+                                        <p style="color: rgb(54,54,54);text-align: center; margin-top: 3%;">Свиные отбивные с цитрусовыми глазурями и имбирным соусом Бок Чой</p>
+                                        <p style="color: rgb(54,54,54); font-style: italic;">Владимир Мухин</p>
+                                        <p style="color: rgb(54,54,54); margin-top: 30%;">40 минут</p>
+                                </a></div>   
+                                <div class="recipe-link" id="rp2"> <a href="pork-chops.html">
+                                                <div class="marker" style="background-color: rgb(144,189,212);">приятно</div>
+                                                <div class="rcp-picture"></div>
+                                                <p style="color: rgb(54,54,54);text-align: center; margin-top: 3%;">Свиные отбивные с цитрусовыми глазурями и имбирным соусом Бок Чой</p>
+                                                <p style="color: rgb(54,54,54); font-style: italic;">Владимир Мухин</p>
+                                                <p style="color: rgb(54,54,54); margin-top: 30%;">40 минут</p>
+                                </a> </div> 
+                                <div class="recipe-link" id="rp3" style="background-color: white;"> <a href="pork-chops.html">
+                                        <div class="marker" style="background-color: rgb(208,212,144);">легко</div>
+                                                <div class="rcp-picture"></div>
+                                                <p style="color: rgb(54,54,54);;text-align: center; margin-top: 3%;">Свиные отбивные с цитрусовыми глазурями и имбирным соусом Бок Чой</p>
+                                                <p style="color: rgb(54,54,54);; font-style: italic;">Владимир Мухин</p>
+                                                <p style="color: rgb(54,54,54);; margin-top: 30%;">40 минут</p>
+                                </a> </div> 
+                </div>
+                <div class="recipe-links-block">
+                                <div class="recipe-links-line">
+                                                <div class="recipe-link" id="rp1"> <a href="pork-chops.html">
+                                                        <div class="marker">полезно</div>
+                                                        <div class="rcp-picture"></div> 
+                                                        <p style="color: rgb(54,54,54);text-align: center; margin-top: 3%;">Свиные отбивные с цитрусовыми глазурями и имбирным соусом Бок Чой</p>
+                                                        <p style="color: rgb(54,54,54); font-style: italic;">Владимир Мухин</p>
+                                                        <p style="color: rgb(54,54,54); margin-top: 30%;">40 минут</p>
+                                                </a></div>   
+                                                <div class="recipe-link" id="rp2"> <a href="pork-chops.html">
+                                                                <div class="marker" style="background-color: rgb(144,189,212);">приятно</div>
+                                                                <div class="rcp-picture"></div>
+                                                                <p style="color: rgb(54,54,54);text-align: center; margin-top: 3%;">Свиные отбивные с цитрусовыми глазурями и имбирным соусом Бок Чой</p>
+                                                                <p style="color: rgb(54,54,54); font-style: italic;">Владимир Мухин</p>
+                                                                <p style="color: rgb(54,54,54); margin-top: 30%;">40 минут</p>
+                                                </a> </div> 
+                                                <div class="recipe-link" id="rp3" style="background-color: white;"> <a href="pork-chops.html">
+                                                                <div class="marker" style="background-color: rgb(208,212,144);">легко</div>
+                                                                        <div class="rcp-picture"></div>
+                                                                        <p style="color: rgb(54,54,54);;text-align: center; margin-top: 3%;">Свиные отбивные с цитрусовыми глазурями и имбирным соусом Бок Чой</p>
+                                                                        <p style="color: rgb(54,54,54);; font-style: italic;">Владимир Мухин</p>
+                                                                        <p style="color: rgb(54,54,54);; margin-top: 30%;">40 минут</p>
+                                                </a> </div>
+                                </div>
+                                <div class="recipe-links-line">
+                                                <div class="recipe-link" id="rp1"> <a href="pork-chops.html">
+                                                        <div class="marker">полезно</div>
+                                                        <div class="rcp-picture"></div> 
+                                                        <p style="color: rgb(54,54,54);text-align: center; margin-top: 3%;">Свиные отбивные с цитрусовыми глазурями и имбирным соусом Бок Чой</p>
+                                                        <p style="color: rgb(54,54,54); font-style: italic;">Владимир Мухин</p>
+                                                        <p style="color: rgb(54,54,54); margin-top: 30%;">40 минут</p>
+                                                </a></div>   
+                                                <div class="recipe-link" id="rp2"> <a href="pork-chops.html">
+                                                                <div class="marker" style="background-color: rgb(144,189,212);">приятно</div>
+                                                                <div class="rcp-picture"></div>
+                                                                <p style="color: rgb(54,54,54);text-align: center; margin-top: 3%;">Свиные отбивные с цитрусовыми глазурями и имбирным соусом Бок Чой</p>
+                                                                <p style="color: rgb(54,54,54); font-style: italic;">Владимир Мухин</p>
+                                                                <p style="color: rgb(54,54,54); margin-top: 30%;">40 минут</p>
+                                                </a> </div> 
+                                                <div class="recipe-link" id="rp3" style="background-color: white;"> <a href="pork-chops.html">
+                                                        <div class="marker" style="background-color: rgb(208,212,144);">легко</div>
+                                                                <div class="rcp-picture"></div>
+                                                                <p style="color: rgb(54,54,54);;text-align: center; margin-top: 3%;">Свиные отбивные с цитрусовыми глазурями и имбирным соусом Бок Чой</p>
+                                                                <p style="color: rgb(54,54,54);; font-style: italic;">Владимир Мухин</p>
+                                                                <p style="color: rgb(54,54,54);; margin-top: 30%;">40 минут</p>
+                                                </a> </div> 
+                                </div>                                
+                </div>
+                <button class="btn" id="see-more" style="margin-top:4%;margin-bottom: 4%; margin-left: 45%;">ПОКАЗАТЬ</button>
+                
+        </div>
+        
+       
+        <!--    Mailing -->
+        <div class="mailing-block" style="background-color: rgb(226, 222, 222); padding-top:0.5%; padding-bottom: 0.5%; margin-top: 0%;">
+                        <div class="borders" style="width:50%; margin:auto">
+                        <h1 style="color: rgb(54,54,54);">Получайте Нашу Рассылку</h1>
+                        <p style="font-style: italic; color: rgb(54,54,54);">Получайте рецепты, советы и специальные предложенияпрямо на Ваш почтовый ящик.</p>
+                        <form id="mailing-registration" style=" width:100%; height: 50px;margin-top: 2%;" onsubmit="return false;">
+                                <input type="email" required id="name" name="name" required minlength="4" maxlength="30" size="10" placeholder="Укажите Ваш почтовый ящик" name="search" style=" margin:0;width:21%;height: 50px; color: black; border:3px solid rgb(206, 206, 206); border-radius: 4%;" >
+                                <button class="btn" style="font-style:italic;height: 50px;">Отправить</button> 
+                        </form>
+                        
+                        
+                        </div>
+                </div>
+
+        <!-- Footer -->
+        <footer>
+                <div class="sending">
+                        <div class="logo"><a href="../index.html" style="text-decoration: none;">
+                                <img class='title-img' src="../assets/images/COOLinar-logo.jpg" alt=""> </a></div>
+                                
+                                <div class="address">
+                                        <p>Ваши рецепты присылайте на:</p>
+                                        <p>blablabla@gmail.com</p>
+                                </div>
+                                <div class="social-networks">
+                                        <p>Наши аккаунты:</p>
+                                </div>
+                                
+                        </div>  
+                        
+                </div>
+                
+          
+        </footer>
+        <div class="under-footer" style="width: 100%;padding-top:0.5%; padding-bottom: 0.5%;background-color:rgb(118, 162, 184);"> <p style="font-size: 100%;color: white; width: 50%; margin:auto;">PRIVACY POLICY | TERMS OF USE</p></div> 
+
+        <!-- SCRIPTS-->        
+   <script src="../jquery-3.4.1.min.js"></script>
+   <script src="../main.js"></script>
+</body>
+
+</html>

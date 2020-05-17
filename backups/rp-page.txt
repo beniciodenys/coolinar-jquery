@@ -1,0 +1,181 @@
+    /**{border: 1px solid #000;}*/
+    /**{filter: grayscale(1)}*/
+
+
+/*  RECIPE BLOCK    */
+.recipe-block{
+    width: 100%;
+    height: auto;
+}
+.recipe-description{
+    width:50%;
+}
+.recipe-description #sup-des-text{    
+    white-space: pre-wrap;
+    font-weight: bold;
+}
+.sup-description{
+    display: flex; 
+    justify-content: space-between; 
+    vertical-align: top;
+}
+.dish-name{
+    text-align: center; 
+    width: 75%; 
+    margin:auto;
+    /*color:rgb(250, 180, 10); - gold*/
+}
+.save-buttons{
+    width:25%; 
+    height:30px; 
+    display: flex;
+    justify-content: space-between;
+}
+.recipe-video{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*  Favorites&Print   */
+#favorites{
+    border-radius: 30px; width: 75%; height: 100%; vertical-align: top; 
+    background-image: url("../images/bookmark-icon-white.png");
+    background-size: 15%;
+    background-position-y: center;background-position-x: 5%;
+    background-repeat: no-repeat;
+    
+}
+#favorites-chosen{
+    border-radius: 30px; width: 20%; height: 100%; vertical-align: top; 
+    background-image: url("../images/bookmark-icon-white.png");
+    background-color: rgb(65,173,73);;
+    background-size: 50%;
+    background-position-y: center;background-position-x: center;
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: 0; 
+    color: transparent;    
+}
+#favorites-chosen:hover{
+    border-radius: 30px; width: 75%; height: 100%; vertical-align: top; 
+    background-image: url("../images/bookmark-icon-white.png");
+    background-size: 15%;
+    background-position-y: center;background-position-x: 5%;
+    background-repeat: no-repeat;
+    color: white;
+    transition: 300ms;  
+}
+#favorites p, #favorites-chosen p{
+    font-size: 100%; white-space: nowrap; margin-left: 15%;   
+}
+#print-button{
+    border-radius: 30px; 
+    width: 15%; 
+    height: 100%; 
+    vertical-align: top;
+    background-image: url("../images/printer-icon-white.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*  Description */
+.description-text{
+    width:49.5%;
+    height: auto;
+    vertical-align:top;
+    margin:0;padding:0; 
+    display: inline-block;
+}
+.description-text p{
+    text-indent: 5%;
+    text-align: justify;
+    padding-right:5%;
+    
+}
+.description-picture{
+    display: inline-block;
+    width:49.6%;
+    height: auto;
+}
+img{
+    width:100%;
+}
+
+/*  Feedback buttons    */
+.feedback-buttons{
+    text-align:end; 
+    height: auto; 
+    margin-bottom: 2%;
+}
+.check-if-cooked{
+    display: inline-block;
+}
+.check-btn{
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    border: none;
+    cursor:pointer;
+    vertical-align:middle; 
+    background-color: transparent;
+    outline: none;
+    display: inline-block;
+}
+#not-cooked{background-image: url("../images/check-false.png");}
+#cooked{background-image: url("../images/check-true.png");}
+#green-text{ color:rgb(65,173,73);}
+.check-if-cooked span{vertical-align:middle; cursor:pointer;}
+
+.rating-block{
+    width:15%;
+    display: inline-flex;
+    text-align: center;
+    vertical-align: middle;
+    background-color: rgb(54,54,54);
+}
+.rating-number{
+    display: inline-block; border: 1px solid #000;width:30%;background-color: rgb(250, 180, 10);
+}
+.rating-stars-container{
+    display: inline-block;  width: 70%;margin-left: auto; margin-right: 0;direction: rtl;}    
+.rating-star{
+width: 15px;
+height: 15px;
+background-image: url("../images/star-darkblue.png");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+cursor:pointer;
+display: inline-block;
+vertical-align: center;
+
+transition: 1000ms all;
+}
+.rating-star:hover{
+    background-image: url("../images/star-gold.png");
+}
+.rating-star:hover ~.rating-star {
+    background-image: url("../images/star-gold.png");
+}
+.rating-block img{
+    width:100%;
+    
+}
+
+/*  Ingridients&Cooking */
+.ingridients ul{list-style: none;}
+.ingridients ul li::before {
+    content: "\2022";
+    color: rgb(158, 203, 226);
+    font-weight: bold;
+    display: inline-block; 
+    width: em;
+    margin-left: -1em;  }
+.save-buttons img{
+    width: 30%;
+    filter: invert(1);
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+        
+<head>
+        <title>Pork Chops|Coolinar.com</title>
+        <link rel="shortcut icon" href="assets/images/icon-2.png" type="image/x-icon">
+        <meta charset="utf-8">
+        <link rel = "stylesheet"
+        type = "text/css"
+        href = "assets/css/style.css" />
+        <link rel = "stylesheet"
+        type = "text/css"
+        href = "assets/css/recipe-page.css" />
+        
+</head>
+
+<body style="background-color: rgba(243,243,243);">
+        <!--    HEADER  -->
+        <header>
+                <div class="header">
+                        <div id="menu"> <button id="menu-btn"></button>
+                                <ul id="menu_list">
+                                                <li><a href="#">��������</a></li>
+                                                <li><a href="#">�����������</a></li>
+                                                <li><a href="#">������������</a></li>
+                                                <li><a href="#">�� ������������</a></li>
+                                                <li><a href="http://127.0.0.1:5500/favorites.html" style="color:teal; text-decoration: underline;font-size: 200%;">���������</a></li>
+                                        </ul>
+                        </div>
+                        <div id="title"> <a href="http://127.0.0.1:5500/index.html">
+                                <img src="assets/images/COOLinarText.jpg" class='title-img' alt=""> </a>
+                        </div>
+                        <div class="search">
+                                <button id="search-btn"></button> 
+                                <input type="search" id="name" name="name" required minlength="4" maxlength="30" size="10" placeholder="��� �� ������ �����������?" style="width:90%; height:90%; color: black; border:0px; border-radius: 5%;" name="search">
+                        </div>
+                </div>
+        </header>
+
+        <div class="overlay"></div>
+        <form action="index.html" class="login-form"> 
+                <h1>Авторизация</h1> 
+
+                <div class="txtb">
+                        <input type="text">
+                        <span data-placeholder="Логин"></span>
+                </div>
+                <div class="txtb">
+                                <input type="password">
+                                <span data-placeholder="Пароль"></span>
+                </div>
+                <input type="submit" class="logbtn" value="Войти">
+                <div class="login-bottom-text">
+                Ещё не зарегестрированы? <a href="#">Регистрация</a>   
+                </div>
+                <div class="close-btn">
+                        <img src="assets/images/close-icon.png" alt="">
+                        закрыть
+                </div>                
+        </form>
+        <!--    BODY  -->
+
+        <!-- Main rp block -->
+        <div class="main-block">
+
+                <div class="recipe-block">
+                        <h1 class="dish-name">������ �������� � ����������� ��������� � �������� ������ ��� ���</h1>
+                        <h2 style="margin-top: 1%;">������ ��������</h2>
+                        <div class="break-line" style="margin-top: 2%; margin-bottom: 5%;"></div>
+                        <div class="sup-description">
+                                <div class="recipe-description">
+                                        <span id="sup-des-text">������</span> <span style="padding-left:5%">4</span> </br>
+                                        <span id="sup-des-text">�����</span> <span style="padding-left:5%">40 �����</span></br>                        
+                                </div>
+                                <div class="save-buttons">
+                                        <button class="btn" id="favorites">                                               
+                                                      <p class="favorites-text">�������� � ���������</p>
+                                        </button>
+                                        <button class="btn" id="print-button"></button>                                                                                         
+                                </div>
+                        </div>
+                        
+                        <div class="description-container" style="margin-top: 1%;">
+                                        <div class="description-text">
+                                                        <p>
+                                                                ������� ������� - ��������� ��������� ��� ���������� ���������� � ���� ������� �����. 
+                                                                ������, �����, ���������� ���� ������� �������� ����� ����, ��� ��� ��������� ������ ���������, ������� ������ �������� � ������� ������ �������. 
+                                                                ����� �������� ����������� ������ ������� ���������������� ����, ��������� ������� ����� ��� ���������, � �������� ���-��� ��������� �������������� ��������. 
+                                                                ���� �� ���� ��� ��������� ���, �� �� ������ ����������� ���� ����������� ��� ������ ���� ��� ������������ �������. �������� �������, ����� ������, � ������� ������ �������� �� �����.
+                                                        </p>
+                                                </div>
+                                        <div  class="description-picture"><img src="https://magazine.skyeng.ru/wp-content/uploads/2017/10/nytimes.jpg" alt="description-picture"></div>                                        
+                        </div>
+                        
+                        <div class="feedback-buttons">
+                                <div class="check-if-cooked">
+                                        <button class="check-btn" id="not-cooked"></button>
+                                        <span class="check-text">�������� ��� �������������� |</span>
+                                </div>
+                                <span style="height: auto;">�������</span>
+                                <div class="rating-block">
+                                        <!-- <img src="assets/images/rating-block.png" alt="rating block"> -->
+                                        <div class="rating-number">4</div>
+                                        <div class="rating-stars-container">
+                                                <div class="rating-star" id="1"></div>
+                                                <div class="rating-star"></div>
+                                                <div class="rating-star"></div>
+                                                <div class="rating-star"></div>
+                                                <div class="rating-star"></div>
+                                        </div>
+                                        
+                                </div>
+                        </div>
+                        <div class="break-line" style="margin-top: 2%; margin-bottom: 5%;"></div>
+
+                        <div class="ingridients" style="width:49%;display: inline-block; margin:0; vertical-align: top;text-align: start;">
+                                        <h1>�����������</h1>
+                                        <ul>
+                                                <li>1  (2-��������) ����� ������� ������, ���������� � �������</li>
+                                                <li>2  �������� ����� �������� ������</li>
+                                                <li>�������� ���� � ������ �����</li>
+                                                <li>1  ���� ������� ��� ��� ���</li>
+                                                <li>2  �������� ����� ������������ �����, ��������, ����� ��� ����������� ��������, � ����� ������ �� ���� �������������</li>
+                                                <li>3  (1 1/2 ����� ��������) �������� �� ������ ������� (����� 2 1/2 ������)</li>
+                                                <li>1 ?  �������� ����� ������-����������� ������</li>
+                                                <li>1  ����� ��������, ����������� ������� �������, ������ �������, ���� 3/4 ������� ������� ������������� ����</li>
+                                                <li>4  ������, ��������� � �����������������</li>
+                                        </ul>
+                        </div>
+                        <div class="cooking" style="width:49%;display: inline-block; margin:0; vertical-align: top;">
+                                        <h1>�������������</h1>
+                                        <p >
+                                        <h3>��� 1</h3>
+                                        <p>� ������� ����� �������� ������ � ������� �����. ���������� ����� � ������. �������� � �������.-
+                                        <h3>��� 2</h3>
+                                        <p>...</p>
+                                        <h3>��� 3</h3>
+                                        <p>...</p>
+                                        <h3>��� 4</h3>
+                                        <p>...</p>
+                                        <h3>��� 5</h3>
+                                        <p>�������� ��� ��� �� �����. �������� ������� � ��������� �� ����� ������ � ������������� ������ �� ����. 
+                                        �������� ����� ����� �� ��������� � �������� ������ ���������������� ������������ ���������.</p>
+                                        </p>
+                        </div>
+
+                        <hr style="margin-top: 1%; margin-bottom: 1%;">
+                        <iframe class="recipe-video" width="560" height="315" src="https://www.youtube.com/embed/Ke_xYIhYPTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      
+                </div>
+                
+                <div class="break-line" style="margin-top: 5%;"></div>
+                <!-- more new recipe-links -->
+                <h1 style="color: rgb(54,54,54);">������ ����� ��������</h1>
+                <div class="recipe-links-line">
+                                <div class="recipe-link" id="rp1"> <a href="#">
+                                        <div class="marker">�������</div>
+                                        <div class="rcp-picture"></div> 
+                                        <p style="color: rgb(54,54,54);text-align: center; margin-top: 3%;">������ �������� � ����������� ��������� � �������� ������ ��� ���</p>
+                                        <p style="color: rgb(54,54,54); font-style: italic;">�������� �����</p>
+                                        <p style="color: rgb(54,54,54); margin-top: 30%;">40 �����</p>
+                                </a></div>   
+                                <div class="recipe-link" id="rp2"> <a href="#">
+                                                <div class="marker" style="background-color: rgb(144,189,212);">�������</div>
+                                                <div class="rcp-picture"></div>
+                                                <p style="color: rgb(54,54,54);text-align: center; margin-top: 3%;">������ �������� � ����������� ��������� � �������� ������ ��� ���</p>
+                                                <p style="color: rgb(54,54,54); font-style: italic;">�������� �����</p>
+                                                <p style="color: rgb(54,54,54); margin-top: 30%;">40 �����</p>
+                                </a> </div> 
+                                <div class="recipe-link" id="rp3" style="background-color: white;"> <a href="#">
+                                        <div class="marker" style="background-color: rgb(208,212,144);">�����</div>
+                                                <div class="rcp-picture"></div>
+                                                <p style="color: rgb(54,54,54);;text-align: center; margin-top: 3%;">������ �������� � ����������� ��������� � �������� ������ ��� ���</p>
+                                                <p style="color: rgb(54,54,54);; font-style: italic;">�������� �����</p>
+                                                <p style="color: rgb(54,54,54);; margin-top: 30%;">40 �����</p>
+                                </a> </div> 
+                </div>
+                <div class="recipe-links-block">
+                                <div class="recipe-links-line">
+                                                <div class="recipe-link" id="rp1"> <a href="#">
+                                                        <div class="marker">�������</div>
+                                                        <div class="rcp-picture"></div> 
+                                                        <p style="color: rgb(54,54,54);text-align: center; margin-top: 3%;">������ �������� � ����������� ��������� � �������� ������ ��� ���</p>
+                                                        <p style="color: rgb(54,54,54); font-style: italic;">�������� �����</p>
+                                                        <p style="color: rgb(54,54,54); margin-top: 30%;">40 �����</p>
+                                                </a></div>   
+                                                <div class="recipe-link" id="rp2"> <a href="#">
+                                                                <div class="marker" style="background-color: rgb(144,189,212);">�������</div>
+                                                                <div class="rcp-picture"></div>
+                                                                <p style="color: rgb(54,54,54);text-align: center; margin-top: 3%;">������ �������� � ����������� ��������� � �������� ������ ��� ���</p>
+                                                                <p style="color: rgb(54,54,54); font-style: italic;">�������� �����</p>
+                                                                <p style="color: rgb(54,54,54); margin-top: 30%;">40 �����</p>
+                                                </a> </div> 
+                                                <div class="recipe-link" id="rp3" style="background-color: white;"> <a href="#">
+                                                                <div class="marker" style="background-color: rgb(208,212,144);">�����</div>
+                                                                        <div class="rcp-picture"></div>
+                                                                        <p style="color: rgb(54,54,54);;text-align: center; margin-top: 3%;">������ �������� � ����������� ��������� � �������� ������ ��� ���</p>
+                                                                        <p style="color: rgb(54,54,54);; font-style: italic;">�������� �����</p>
+                                                                        <p style="color: rgb(54,54,54);; margin-top: 30%;">40 �����</p>
+                                                </a> </div>
+                                </div>
+                                <div class="recipe-links-line">
+                                                <div class="recipe-link" id="rp1"> <a href="#">
+                                                        <div class="marker">�������</div>
+                                                        <div class="rcp-picture"></div> 
+                                                        <p style="color: rgb(54,54,54);text-align: center; margin-top: 3%;">������ �������� � ����������� ��������� � �������� ������ ��� ���</p>
+                                                        <p style="color: rgb(54,54,54); font-style: italic;">�������� �����</p>
+                                                        <p style="color: rgb(54,54,54); margin-top: 30%;">40 �����</p>
+                                                </a></div>   
+                                                <div class="recipe-link" id="rp2"> <a href="#">
+                                                                <div class="marker" style="background-color: rgb(144,189,212);">�������</div>
+                                                                <div class="rcp-picture"></div>
+                                                                <p style="color: rgb(54,54,54);text-align: center; margin-top: 3%;">������ �������� � ����������� ��������� � �������� ������ ��� ���</p>
+                                                                <p style="color: rgb(54,54,54); font-style: italic;">�������� �����</p>
+                                                                <p style="color: rgb(54,54,54); margin-top: 30%;">40 �����</p>
+                                                </a> </div> 
+                                                <div class="recipe-link" id="rp3" style="background-color: white;"> <a href="#">
+                                                        <div class="marker" style="background-color: rgb(208,212,144);">�����</div>
+                                                                <div class="rcp-picture"></div>
+                                                                <p style="color: rgb(54,54,54);;text-align: center; margin-top: 3%;">������ �������� � ����������� ��������� � �������� ������ ��� ���</p>
+                                                                <p style="color: rgb(54,54,54);; font-style: italic;">�������� �����</p>
+                                                                <p style="color: rgb(54,54,54);; margin-top: 30%;">40 �����</p>
+                                                </a> </div> 
+                                </div>                                
+                </div>
+                <button class="btn" id="see-more" style="margin-top:4%;margin-bottom: 4%; margin-left: 45%;">��������</button>
+        </div>        
+                
+        <!--    Mailing -->
+        <div class="mailing-block" style="background-color: rgb(226, 222, 222); padding-top:0.5%; padding-bottom: 0.5%; margin-top: 0%;">
+                        <div class="borders" style="width:50%; margin:auto">
+                        <h1 style="color: rgb(54,54,54);">��������� ���� ��������</h1>
+                        <p style="font-style: italic; color: rgb(54,54,54);">��������� �������, ������ � ����������� ���������������� �� ��� �������� ����.</p>
+                        <form id="mailing-registration" style=" width:100%; height: 50px;margin-top: 2%;" onsubmit="return false;">
+                                <input type="email" required id="name" name="name" required minlength="4" maxlength="30" size="10" placeholder="������� ��� �������� ����" name="search" style=" margin:0;width:21%;height: 50px; color: black; border:3px solid rgb(206, 206, 206); border-radius: 4%;" >
+                                <button class="btn" style="font-style:italic;height: 50px;">���������</button> 
+                        </form>
+                        
+                        
+                        </div>
+                </div>
+
+        <!-- Footer -->
+        <footer>
+                <div class="sending">
+                        <div class="logo"><a href="http://127.0.0.1:5500/index.html" style="text-decoration: none;">
+                                <img class='title-img' src="assets/images/COOLinar-logo.jpg" alt=""> </a></div>
+                                
+                                <div class="address">
+                                        <p>���� ������� ���������� ��:</p>
+                                        <p>blablabla@gmail.com</p>
+                                </div>
+                                <div class="social-networks">
+                                        <p>���� ��������:</p>
+                                </div>
+                                
+                        </div>  
+                        
+                </div>
+                
+                
+        </footer>
+        <div class="under-footer" style="width: 100%;padding-top:0.5%; padding-bottom: 0.5%;background-color:rgb(118, 162, 184);"> <p style="font-size: 100%;color: white; width: 50%; margin:auto;">PRIVACY POLICY | TERMS OF USE</p></div> 
+
+        <!-- SCRIPTS-->        
+   <script src="jquery-3.4.1.min.js"></script>
+   <script src="main.js"></script>
+</body>
+
+</html>
